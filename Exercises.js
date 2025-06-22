@@ -11,29 +11,37 @@
 // console.log(b);
 
 
-//---------------exe2--------------------------
-    let matrix = [
-        ['x', 'X', 'x'],
-        ['X', 'x', 'X'],
-        ['x', 'X','X']
-    ];
+// //---------------exe2--------------------------
+//     let matrix = [
+//         ['x', 'X', 'x'],
+//         ['X', 'x', 'X'],
+//         ['x', 'X','X']
+//     ];
 
-let countX=0;
-let coordinates= [];
-for(let i=0;i<matrix.length;i++){
-    for(let z =0; z<matrix[i].length;z++){
-        if(matrix[i][z]===`X`){
-            countX++;
-           let xAndy=[i,z];
-            coordinates.push(xAndy);
-        }
-    }
+// let countX=0;
+// let coordinates= [];
+// for(let i=0;i<matrix.length;i++){
+//     for(let z =0; z<matrix[i].length;z++){
+//         if(matrix[i][z]===`X`){
+//             countX++;
+//            let xAndy=[i,z];
+//             coordinates.push(xAndy);
+//         }
+//     }
+// }
+// console.log(countX);
+// console.log(coordinates);
+
+//--------------ex3------------------------------
+
+let family = { parents: {}, children: [ {name: "Ali"}, {name: "Lea"}, {name: "Mona"} ] };
+
+console.log(family.children[2])
+
+let namse='';
+
+for(let i =0; i<family.children.length;i++){
+    namse+=family.children[i].name + " ";
 }
-console.log(countX);
-console.log(coordinates);
-
-
-
-
-
+console.log(namse);
 
