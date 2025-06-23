@@ -1,17 +1,17 @@
 
 //----------------exe1-----------------------
-// let a='ider';
-// let b='yoel';
-// b=b+" "+ a;
-// console.log(b);
-// const index = b.indexOf(" ");
-// a=b.substring(0,index);
-// console.log(a);
-// b=b.substring(index +1)
-// console.log(b);
+let a='ider';
+let b='yoel';
+b=b+" "+ a;
+console.log(b);
+const index = b.indexOf(" ");
+a=b.substring(0,index);
+console.log(a);
+b=b.substring(index +1)
+console.log(b);
 
 
-//---------------exe2--------------------------
+// //---------------exe2--------------------------
     let matrix = [
         ['x', 'X', 'x'],
         ['X', 'x', 'X'],
@@ -32,8 +32,17 @@ for(let i=0;i<matrix.length;i++){
 console.log(countX);
 console.log(coordinates);
 
+//--------------ex3------------------------------
 
+let family = { parents: {}, children: [ {name: "Ali"}, {name: "Lea"}, {name: "Mona"} ] };
 
+console.log(family.children[2])
 
+let namse='';
 
+for(let i =0; i<family.children.length;i++){
+    namse+=family.children[i].name + " ";
+}
+console.log(namse);
 
+//--------------ex4------------------------------

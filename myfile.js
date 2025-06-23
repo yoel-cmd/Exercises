@@ -120,25 +120,85 @@
 
 
 
-const person={}
-person.name=`yoel`;
-person.age=29;
-person.hobbies=['gaming','food','cooking'];
-person.favFood=['chiken','meet','rise'];
-console.log(person.name,person.age);
+// const person={}
+// person.name=`yoel`;
+// person.age=29;
+// person.hobbies=['gaming','food','cooking'];
+// person.favFood=['chiken','meet','rise'];
+// console.log(person.name,person.age);
 
-let hobbie='';
-for(let x of person.hobbies){
-   hobbie += x+" ";
+// let hobbie='';
+// for(let x of person.hobbies){
+//    hobbie += x+" ";
+// }
+// console.log(hobbie);
+
+// let favFo='';
+// for(let y of person.favFood){
+//    favFo+=y+" ";
+// }
+// console.log(favFo);
+
+
+
+
+// function uppercace(name){
+//    return name.toUpperCase();
+// }
+
+// function birthday(age){
+//    return 2025-age;
+// }
+
+// console.log(uppercace(`yoel`));
+// console.log(birthday(1995));
+
+
+// const add=(x,y)=>{
+//    return x+y
+// }
+// const sub=(x,y)=>{
+//    return x-y
+// }
+// const multy=(x,y)=>{
+//    return x*y
+// }
+// const div=(x,y)=>{
+//    return x/y
+// }
+
+// console.log(add(2,3));
+// console.log(sub(2,3));
+// console.log(multy(2,3));
+// console.log(div(2,3));
+
+// function seyHi(){
+//    console.log(`hi`);
+// }
+
+// function logger(fn) {
+//    console.log(`start`);
+//    fn()
+//    console.log(`end`);
+// }
+
+// logger(seyHi);
+
+
+function start(num,multi){
+  return multi(num,sub)
 }
-console.log(hobbie);
-
-let favFo='';
-for(let y of person.favFood){
-   favFo+=y+" ";
+function multi(num,sub){
+   const res=num*2;
+  return sub(res,div)
 }
-console.log(favFo);
-
-
-
+function sub(num,div){
+   const res=num-5;
+   return  div(res)
+}
+function div(num){
+   return  num/10 ;
+}
+// const res=
+console.log(start(5,multi));
 

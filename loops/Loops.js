@@ -1,21 +1,23 @@
 //------------ex1--------------
-// const arr=[2,3,4,5,6,7,8,9,10]
 
-// function doubleValues(num){
-//     return num*2;
-// }
+ const arr1=[2,3,4,5,6,7,8,9,10]
 
-// const res=arr.map(doubleValues);
-// console.log(res);
+ function doubleValues(num){
+     return num*2;
+ }
+
+ const res1=arr1.map(doubleValues);
+ console.log(res1);
 
 //------------ex2--------------
-const arr=[2,3,4,5,6,7,8,9,10]
+const arr2=[2,3,4,5,6,7,8,9,10]
 
 function onlyEvenValues(num){
         if(num%2===0)
-            res.push(num) ;
+            res2.push(num) ;
         
 }
-const res=[];
-arr.map(onlyEvenValues);
-console.log(res);
+const res2=[];
+arr2.map(onlyEvenValues);
+console.log(res2);
+
