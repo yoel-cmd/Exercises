@@ -14,7 +14,7 @@
 // function onlyEvenValues(num){
 //         if(num%2===0)
 //             res2.push(num) ;
-        
+
 // }
 // const res2=[];
 // arr2.map(onlyEvenValues);
@@ -71,36 +71,50 @@
 
 // console.log(fn(str));
 
-//----------------------ex6-------------------------------
-const strr = "Zoo is fun!";
+// //----------------------ex6-------------------------------
+// const strr = "Zoo is fun!";
 
-function shiftLetters (str){ 
-    const arrStr=str.split('');
-    const arrUpper=arrStr.map((ch)=>{
-        let accii=0
-        let nCh=''
-        if(ch==='z'){
-           return 'a'
-        }
-        if(ch==='Z'){
-          return 'A'
-        }
-        if(ch >='a' && ch<='y'){
-            accii= ch.charCodeAt() +1
-            nCh=String.fromCharCode(accii)
-            return nCh
-        }
-         if(ch >='A' && ch<='Y'){
-           accii= ch.charCodeAt() +1
-            nCh=String.fromCharCode(accii)
-            return nCh
-        }
-        else{
-            return ch
-        }  
-    })
-    const newStrUpper=arrUpper.join('')
-    return newStrUpper
-}
- console.log(shiftLetters(strr))
+// function shiftLetters (str){ 
+//     const arrStr=str.split('');
+//     const arrUpper=arrStr.map((ch)=>{
+//         let accii=0
+//         let nCh=''
+//         if(ch==='z'){
+//            return 'a'
+//         }
+//         if(ch==='Z'){
+//           return 'A'
+//         }
+//         if(ch >='a' && ch<='y'|| ch >='A' && ch<='Y'){
+//             accii= ch.charCodeAt() +1
+//             nCh=String.fromCharCode(accii)
+//             return nCh
+//         }
+//         else{
+//             return ch
+//         }  
+//     })
+//     const newStrUpper=arrUpper.join('')
+//     return newStrUpper
+// }
+//  console.log(shiftLetters(strr))
+
 //-------------------ex7------------------
+const str1 = "this is a simple test"
+
+
+
+function swapCase(str) {
+    const arrStr = str.split(' ');
+    arrStr.forEach((val, index) => {
+        if (index % 2 != 0)
+            arrStr[index] = val.toUpperCase();
+    });
+    const strUper = arrStr.join(' ')
+    return strUper
+}
+console.log(swapCase(str1));
+
+
+
+
