@@ -60,4 +60,14 @@ console.log(counts);
 
 //---------------ex5------------------------
 
+const str = "Programming is awesome and full of opportunities!";
+
+function fn(str){
+    const arrLettr=str.split('');
+    const arrUpper=arrLettr.map((ch)=>{return ch.toUpperCase()})
+    const newStrUpper=arrUpper.join('');
+    return(newStrUpper)
+}
+
+console.log(fn(str));
 
