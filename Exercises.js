@@ -1,49 +1,49 @@
 
-// //----------------exe1-----------------------
-// let a='ider';
-// let b='yoel';
-// b=b+" "+ a;
-// console.log(b);
-// const index = b.indexOf(" ");
-// a=b.substring(0,index);
-// console.log(a);
-// b=b.substring(index +1)
-// console.log(b);
+//----------------exe1-----------------------
+let a='ider';
+let b='yoel';
+b=b+" "+ a;
+console.log(b);
+const index = b.indexOf(" ");
+a=b.substring(0,index);
+console.log(a);
+b=b.substring(index +1)
+console.log(b);
 
 
-// // //---------------exe2--------------------------
-//     let matrix = [
-//         ['x', 'X', 'x'],
-//         ['X', 'x', 'X'],
-//         ['x', 'X','X']
-//     ];
+// //---------------exe2--------------------------
+    let matrix = [
+        ['x', 'X', 'x'],
+        ['X', 'x', 'X'],
+        ['x', 'X','X']
+    ];
 
-// let countX=0;
-// let coordinates= [];
-// for(let i=0;i<matrix.length;i++){
-//     for(let z =0; z<matrix[i].length;z++){
-//         if(matrix[i][z]===`X`){
-//             countX++;
-//            let xAndy=[i,z];
-//             coordinates.push(xAndy);
-//         }
-//     }
-// }
-// console.log(countX);
-// console.log(coordinates);
+let countX=0;
+let coordinates= [];
+for(let i=0;i<matrix.length;i++){
+    for(let z =0; z<matrix[i].length;z++){
+        if(matrix[i][z]===`X`){
+            countX++;
+           let xAndy=[i,z];
+            coordinates.push(xAndy);
+        }
+    }
+}
+console.log(countX);
+console.log(coordinates);
 
-// //--------------ex3------------------------------
+//--------------ex3------------------------------
 
-// let family = { parents: {}, children: [ {name: "Ali"}, {name: "Lea"}, {name: "Mona"} ] };
+let family = { parents: {}, children: [ {name: "Ali"}, {name: "Lea"}, {name: "Mona"} ] };
 
-// console.log(family.children[2])
+console.log(family.children[2])
 
-// let namse='';
+let namse='';
 
-// for(let i =0; i<family.children.length;i++){
-//     namse+=family.children[i].name + " ";
-// }
-// console.log(namse);
+for(let i =0; i<family.children.length;i++){
+    namse+=family.children[i].name + " ";
+}
+console.log(namse);
 
 //--------------ex4------------------------------
 const str = "effort is always the winner";
@@ -60,4 +60,11 @@ console.log(reversingStr);
 
 //-----------------ex5----------------------
 
+const mixedArr = [42, "hello", null, true, { name: "Alice" }, 3.14, false, "world", null, [1, 2, 3], 0, "", undefined];
+
+let numCount = 0;       // מספרים
+let strCount = 0;       // מחרוזות
+let objCount = 0;       // אובייקטים (לא כולל null)
+let boolCount = 0;      // בוליאנים (true/false)
+let nullCount = 0;      // ערכים שהם null
 
