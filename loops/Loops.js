@@ -1,24 +1,24 @@
-// //------------ex1--------------
-// const arr1=[2,3,4,5,6,7,8,9,10];
+//------------ex1--------------
+const arr1=[2,3,4,5,6,7,8,9,10];
 
-// // function doubleValues(num){
-// //     return num*2;
-// // }
-
-// const res1=arr1.map((num)=>{return num*2});
-// console.log(res1);
-
-// //------------ex2--------------
-// const arr2=[2,3,4,5,6,7,8,9,10]
-
-// function onlyEvenValues(num){
-//         if(num%2===0)
-//             res2.push(num) ;
-        
+// function doubleValues(num){
+//     return num*2;
 // }
-// const res2=[];
-// arr2.map(onlyEvenValues);
-// console.log(res2);
+
+const res1=arr1.map((num)=>{return num*2});
+console.log(res1);
+
+//------------ex2--------------
+const arr2=[2,3,4,5,6,7,8,9,10]
+
+function onlyEvenValues(num){
+        if(num%2===0)
+            res2.push(num) ;
+        
+}
+const res2=[];
+arr2.map(onlyEvenValues);
+console.log(res2);
 
 //------------ex3----------------
 
@@ -36,3 +36,28 @@ function showFirstAndLast(arr){
     return newArr;
 }
 console.log(showFirstAndLast(mixedArray));
+
+//------------------ex4-------------
+
+const exampleString = "This is a simple example to count vowels.";
+
+let counts = {
+  a: 0,
+  e: 0,
+  i: 0,
+  o: 0,
+  u: 0
+}
+const lowerExampleString =exampleString.toLowerCase();
+let letters=lowerExampleString.split('');
+letters.forEach((ch)=>{
+    if(ch in counts){
+        counts[ch]++;
+    }
+})
+
+console.log(counts);
+
+//---------------ex5------------------------
+
+
