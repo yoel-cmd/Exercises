@@ -62,9 +62,9 @@ console.log(reversingStr);
 
 const mixedArr = [42, "hello", null, true, { name: "Alice" }, 3.14, false, "world", null, [1, 2, 3], 0, "", undefined];
 
-let numCount = 0;       // מספרים
-let strCount = 0;       // מחרוזות
-let objCount = 0;       // אובייקטים (לא כולל null)
-let boolCount = 0;      // בוליאנים (true/false)
-let nullCount = 0;      // ערכים שהם null
+let numCount = 0;       
+let strCount = 0;       
+let objCount = 0;       
+let boolCount = 0;      
+let nullCount = 0;     
 
