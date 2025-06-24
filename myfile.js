@@ -185,20 +185,74 @@
 // logger(seyHi);
 
 
-function start(num,multi){
-  return multi(num,sub)
+// function start(num,multi){
+//   return multi(num,sub)
+// }
+// function multi(num,sub){
+//    const res=num*2;
+//   return sub(res,div)
+// }
+// function sub(num,div){
+//    const res=num-5;
+//    return  div(res)
+// }
+// function div(num){
+//    return  num/10 ;
+// }
+// // const res=
+// console.log(start(5,multi));
+
+
+//  let i=0;
+// function factorialSpell (name) {
+//    i++;
+//   let level=i;
+//    return  ()=>{return `name: ${name} level: ${level}`};
+// }
+
+//  const res=factorialSpell("fireball");
+//  console.log(res());
+
+//  const res2=factorialSpell('fireball2')
+//  console.log(res());
+//  console.log(res());
+//  console.log(res2());
+ 
+//  const res3=factorialSpell('adFireball');
+//  console.log(res());
+//  console.log(res2());
+//  console.log(res3());
+
+
+
+
+
+
+
+/**
+ * 1. CREATE a function factory => function that returns a function - V
+ * 2. factory gets spell name - V
+ * 3. inner function prints this name - V
+ * 4. inner function prints power level - V
+ * 5. each factory use - add 1 to power - V
+ * 6. inner function should print the power when it was created 
+ */
+let power = 0;
+function spellFactory(spellName){
+    power++;
+    let level= power;
+    
+    const fn = ()=>{
+        console.log(`spell name: ${spellName}, power: ${level}`)
+       
+    }
+    return fn;
 }
-function multi(num,sub){
-   const res=num*2;
-  return sub(res,div)
-}
-function sub(num,div){
-   const res=num-5;
-   return  div(res)
-}
-function div(num){
-   return  num/10 ;
-}
-// const res=
-console.log(start(5,multi));
+
+const spell1 = spellFactory("fire") // power new 1
+spell1(); // spell name fire, power: 1
+const spell2 = spellFactory("ice") // power new 2
+spell2(); // spell name ice, power: 2
+spell1();  // spell name fire, power: 1
+
 
