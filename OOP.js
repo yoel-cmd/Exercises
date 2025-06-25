@@ -22,7 +22,26 @@ rectangle.area();
 
 //-----------------ex3------------------
 
+function BankAccount(owner,balance){
+    this.owner=owner;
+    this.balance=balance;
+    this.deposit=function(amount){
+        balance+=amount;
+        this.checkBalance();
+    }
+    this.withdraw=function(amount){
+         balance-=amount;
+         this.checkBalance();
+    }
+    this.checkBalance=function(){
+        console.log(`current balance : ${balance}`);
+    }
+}
 
+const bankAccount=new BankAccount('yoel',1000);
+bankAccount.deposit(500);
+bankAccount.withdraw(200)
+bankAccount.checkBalance();
 
 //-----------------ex4------------------
 
