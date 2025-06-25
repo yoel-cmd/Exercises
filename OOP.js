@@ -44,8 +44,24 @@ bankAccount.withdraw(200)
 bankAccount.checkBalance();
 
 //-----------------ex4------------------
-
-
+function Animal(name){
+        this.name=name;
+        this.speak=function(){
+            console.log(`${this.name} makes a sound `);
+            
+        }
+}
+function Dog(name){
+    this.name=name;
+    this.bark=function(){
+        console.log(`${name} barks`);    
+    }
+}
+const animal=new Animal('animal');
+const dog= new Dog('Rocky');
+Object.setPrototypeOf(dog,animal);
+dog.speak();
+dog.bark();
 
 //-----------------ex5------------------
 
