@@ -154,4 +154,30 @@ student.study();
 
 //-----classes-----ex9----classes-------------
 
+class Emploee{
+    #salary;
+    constructor(salary){
+        this.#salary=salary;
+    }
+    getSalary(){
+        console.log(this.#salary);   
+    }
+    work(){
+    console.log('Employee is working');
+    }
+}
+class Meneger extends Emploee{
+    constructor(salary){
+        super(salary);
+    }
+    work(){
+        console.log('Manager is managing');  
+    }
+}
+const emploee=new Emploee(4000)
+emploee.getSalary();
+emploee.work();
+const meneger=new Meneger(5000)
+meneger.getSalary();
+meneger.work();
 
