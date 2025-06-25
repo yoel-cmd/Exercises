@@ -114,7 +114,7 @@ square.area()
 
 
 
-//-----classes-----ex----classes-------------
+//-----classes-----ex7----classes-------------
 
 class Book{
     constructor(title, author){
