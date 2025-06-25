@@ -237,22 +237,103 @@
  * 5. each factory use - add 1 to power - V
  * 6. inner function should print the power when it was created 
  */
-let power = 0;
-function spellFactory(spellName){
-    power++;
-    let level= power;
-    
-    const fn = ()=>{
-        console.log(`spell name: ${spellName}, power: ${level}`)
+// let power = 0;
+// function spellFactory(spellName){
+//     power++;
+//     let level= power;    
+//     const fn = ()=>{
+//         console.log(`spell name: ${spellName}, power: ${level}`)
        
+//     }
+//     return fn;
+// }
+
+// const spell1 = spellFactory("fire") // power new 1
+// spell1(); // spell name fire, power: 1
+// const spell2 = spellFactory("ice") // power new 2
+// spell2(); // spell name ice, power: 2
+// spell1();  // spell name fire, power: 1
+
+
+// function Book(author,category,numOfPages){
+//         this.author=author;
+//         this.category=category;
+//         this.numOfPages=numOfPages;
+//         this.showDitails=function(){
+//             console.log(`The auter : ${author}` );
+//             console.log(`The category : ${category}` );
+//             console.log(`number of pages : ${numOfPages}` ); 
+//         }
+// }
+// const res = new Book('yoel', 'terror', 212);
+
+// res.showDitails();
+
+// function 
+//brand,drive(),feul()
+// function Car(brand){
+//     this.brand=brand;
+//     this.drive=function(){
+//         console.log('wrom ,wrom');    
+//     }
+//     this.fual=function(){
+//         console.log(`fual`);  
+//     }
+// }
+// function Tesla(){
+//     this.idBattry=true;
+// }
+
+// const res1= new Car();
+// // res1.drive()
+// // res1.fual()
+
+// const res= new Tesla();
+
+
+// // Object.setPrototypeOf(Tesla,Car);
+// Object.setPrototypeOf(res,res1);
+
+// res.drive();
+// res.fual();
+
+
+function Animal(name){
+    this.name= name;
+    this.makeSound=function(){
+        console.log('voice');      
     }
-    return fn;
 }
 
-const spell1 = spellFactory("fire") // power new 1
-spell1(); // spell name fire, power: 1
-const spell2 = spellFactory("ice") // power new 2
-spell2(); // spell name ice, power: 2
-spell1();  // spell name fire, power: 1
+function Cat(name){
+    this.name=name
+    this.makeSound=function(){
+        console.log('miau');
+        
+    }
+}
+
+function Dog(name){
+    this.name=name
+    this.makeSound=function(){
+        console.log('hav hav')
+        
+    }
+}
+
+const animal=new Animal('myau');
+const dog=new Dog('myau');
+const cat=new Cat('myau');
+
+Object.setPrototypeOf(dog,animal)
+Object.setPrototypeOf(cat,animal)
+
+dog.makeSound();
+// a.makeSound();
+cat.makeSound();
+
+
+
+
 
 
