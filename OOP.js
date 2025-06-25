@@ -64,7 +64,25 @@ dog.speak();
 dog.bark();
 
 //-----------------ex5------------------
+function Vehicle(type){
+        this.type=type;
+        this.describe=function(){
+            console.log(`This is a ${type} `);
+            
+        }
+}
+function Car(brand){
+    this.brand=brand;
+    this.info=function(){
+        console.log(`This is a  ${brand} ${this.type} `);    
+    }
+}
 
+const vehicle=new Vehicle('car');
+const car= new Car('BMW');
+Object.setPrototypeOf(car,vehicle);
+vehicle.describe();
+car.info()
 
 
 //-----------------ex6------------------
