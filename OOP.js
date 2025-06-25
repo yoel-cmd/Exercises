@@ -129,6 +129,28 @@ const book=new Book('The Hobbit',`Tolkien`);
 book.info();
 //-----classes-----ex8----classes-------------
 
+class Person{
+    constructor(name){
+        this.name=name;
+    }
+    greet(){
+        console.log(`Hello, i'm ${this.name}`);
+    }
+}
+class Student extends Person {
+    constructor(name,shcool){
+        super(); 
+        this.name=name;
+        this.shcool=shcool;
+    }
+    study() {
+        console.log(`${this.name} is studying at ${this.shcool}`);   
+    } 
+}
+const student=new Student('alice','Oxford');
+student.greet();
+student.study();
+
 
 //-----classes-----ex9----classes-------------
 
