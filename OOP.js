@@ -86,6 +86,31 @@ car.info()
 
 
 //-----------------ex6------------------
+function Shape(){
+    this.area=function(){
+        console.log(0);    
+        }
+}
+
+function Circle(radius){
+     this.area=function(){
+        console.log(Math.PI * (radius*radius));    
+        }
+}
+function Square(side){
+    this.area=function(){
+        console.log(side*side);    
+        }
+}
+
+const shape=new Shape();
+const circle= new Circle(3);
+const square= new Square(4);
+Object.setPrototypeOf(circle,shape);
+Object.setPrototypeOf(square,shape);
+
+circle.area();
+square.area()
 
 
 
